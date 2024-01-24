@@ -2,17 +2,17 @@ package com.example.lab2;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 
 public class StudentController {
     @FXML
-    private Label welcomeText;
-
+    private TableView<Student> studentTable;
     @FXML
-    private Label helloText;
-
-
+    private TextField idField;
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to Student system!");
-    }
+    private TextField nameField;
+    @FXML
+    private TextField majorField;
+
 }
