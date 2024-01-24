@@ -8,6 +8,10 @@ public class StudentController {
     private Label welcomeText;
 
     @FXML
+    private Label helloText;
+
+
+    @FXML
     protected void onHelloButtonClick() {
         welcomeText.setText("Welcome to Student system!");
     }
