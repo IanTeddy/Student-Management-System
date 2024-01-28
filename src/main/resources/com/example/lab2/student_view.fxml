@@ -53,6 +53,6 @@
             <TableColumn fx:id="major" prefWidth="123.99713134765625" text="Major" />
         </columns>
       </TableView>
-      <Button layoutX="504.0" layoutY="360.0" mnemonicParsing="false" text="DELETE" />
+      <Button layoutX="504.0" layoutY="360.0" mnemonicParsing="false" onAction="#deleteStudent" text="DELETE" />
    </children>
 </AnchorPane>
