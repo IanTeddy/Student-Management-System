@@ -63,5 +63,12 @@ public class StudentController implements Initializable {
         }
     }
 
+    // Delete students function
+    @FXML
+    void deleteStudent(ActionEvent event) {
+        int selectedID = studentTable.getSelectionModel().getSelectedIndex();
+        studentTable.getItems().remove(selectedID);
+    }
+
 
 }
