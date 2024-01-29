@@ -63,6 +63,8 @@ public class StudentController implements Initializable {
         } catch (NumberFormatException e){ // Error Handling(2): Check if ID is number
             throw new IllegalArgumentException("Invalid ID. Must be integer value.");
         }
+
+        deleteStudent(event);
     }
 
     // Delete students function
@@ -80,6 +82,20 @@ public class StudentController implements Initializable {
         studentTable.setItems(latestData);
 
         System.out.println("Refreshed the data in the table!");
+    }
+
+    // Edit students function
+    @FXML
+    void editStudent() {
+        if(studentTable.getSelectionModel().getSelectedItem() != null) {
+            Student studentSelected = studentTable.getSelectionModel().getSelectedItem();
+
+            idField.setText(String.valueOf(studentSelected.getId()));
+            nameField.setText(studentSelected.getName());
+            majorField.setText(studentSelected.getMajor());
+        }else{
+            System.out.println("No item selected in the table.");
+        }
     }
 
 }

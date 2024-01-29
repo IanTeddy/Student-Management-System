@@ -46,7 +46,7 @@
          </font>
       </TextField>
       <Button layoutX="142.0" layoutY="360.0" mnemonicParsing="false" onAction="#addStudent" text="ADD" />
-      <TableView fx:id="studentTable" layoutX="320.0" layoutY="104.0" prefHeight="232.0" prefWidth="382.0" style="-fx-region-border: 1px;">
+      <TableView fx:id="studentTable" layoutX="320.0" layoutY="104.0" onMouseClicked="#editStudent" prefHeight="232.0" prefWidth="382.0" style="-fx-region-border: 1px;">
         <columns>
           <TableColumn fx:id="studentID" prefWidth="115.70516967773438" text="Student ID" />
             <TableColumn fx:id="fullName" prefWidth="141.00283813476562" text="Full Name" />
