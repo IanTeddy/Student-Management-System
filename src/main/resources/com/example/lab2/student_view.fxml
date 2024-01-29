@@ -54,5 +54,6 @@
         </columns>
       </TableView>
       <Button layoutX="504.0" layoutY="360.0" mnemonicParsing="false" onAction="#deleteStudent" text="DELETE" />
+      <Button layoutX="677.0" layoutY="35.0" mnemonicParsing="false" onAction="#refreshTable" text="Refresh" />
    </children>
 </AnchorPane>
