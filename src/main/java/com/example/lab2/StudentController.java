@@ -1,5 +1,7 @@
 package com.example.lab2;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -70,5 +72,14 @@ public class StudentController implements Initializable {
         studentTable.getItems().remove(selectedID);
     }
 
+    //Initialize the table
+    @FXML
+    void refreshTable(ActionEvent event) {
+        ObservableList<Student> latestData = FXCollections.observableArrayList();
+
+        studentTable.setItems(latestData);
+
+        System.out.println("Refreshed the data in the table!");
+    }
 
 }
